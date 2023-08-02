@@ -19,12 +19,9 @@ input {
   overflow: hidden;
   background: linear-gradient(
     to right,
-    #a9c0f7,
-    #e28dc3,
-    #3f3fa9,
-    #c093df,
-    #44dc53,
-    #7fc4f0
+    #272424,
+    #6a5f5f,
+    #c4bcbc
   );
   background-size: 400% 400%;
   animation: body 10s infinite ease-in-out;
