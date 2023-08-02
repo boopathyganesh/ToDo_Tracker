@@ -13,35 +13,16 @@ input {
   font-family: "Poppins", sans-serif;
 }
 
-.container{
+main {
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
-  background: linear-gradient(
-    to right,
-    #272424,
-    #6a5f5f,
-    #c4bcbc
-  );
-  background-size: 400% 400%;
-  animation: body 10s infinite ease-in-out;
+  background-image: linear-gradient(to right, #312d2d, #877d7d);
   padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-@keyframes body {
-    0% {
-      background-position: 0 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0 50%;
-    }
-  }
-  
 
 .box {
   position: relative;
@@ -62,10 +43,6 @@ input {
   transform: translate(-50%, -50%);
 }
 
-.todo .heading h2{
-    color: #0000ff;
-}
-
 .forms-wrap {
   position: absolute;
   height: 100%;
@@ -76,6 +53,10 @@ input {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   transition: 0.8s ease-in-out;
+}
+
+main .forms-wrap h2{
+    color: #0000ff;
 }
 
 form {
@@ -120,7 +101,7 @@ form.sign-up-form {
 }
 
 .heading h6 {
-  color: #bababa;
+  color: #000;
   font-weight: 400;
   font-size: 0.75rem;
   display: inline;
@@ -135,7 +116,7 @@ form.sign-up-form {
 }
 
 .toggle:hover {
-  color: #8371fd;
+  color: #3218db;
 }
 
 .input-wrap {
@@ -207,24 +188,24 @@ label {
 }
 
 .text a:hover {
-  color: #8371fd;
+  color: #0000ff;
 }
 
-.todo .sign-up-mode form.sign-in-form {
+main.sign-up-mode form.sign-in-form {
   opacity: 0;
   pointer-events: none;
 }
 
-.todo .sign-up-mode form.sign-up-form {
+main.sign-up-mode form.sign-up-form {
   opacity: 1;
   pointer-events: all;
 }
 
-.todo .sign-up-mode .forms-wrap {
+main.sign-up-mode .forms-wrap {
   left: 55%;
 }
 
-.todo .sign-up-mode .carousel {
+main.sign-up-mode .carousel {
   left: 0%;
 }
 
@@ -234,17 +215,13 @@ label {
   width: 55%;
   left: 45%;
   top: 0;
-  background-image: linear-gradient(to right, #000, #8b8585);
+  background-image: linear-gradient(to right, #312d2d, #877d7d);
   border-radius: 2rem;
   display: grid;
   grid-template-rows: auto 1fr;
   padding-bottom: 2rem;
   overflow: hidden;
   transition: 0.8s ease-in-out;
-}
-
-.carousel .text-slider .text-group h2{
-    color:#fff;
 }
 
 .images-wrapper {
@@ -300,6 +277,7 @@ label {
 }
 
 .text-group h2 {
+  color: #fff;
   line-height: 2.2rem;
   font-weight: 600;
   font-size: 1.6rem;
@@ -363,11 +341,11 @@ label {
     transform: translateX(100%);
   }
 
-  .todo .sign-up-mode form.sign-in-form {
+  main.sign-up-mode form.sign-in-form {
     transform: translateX(-100%);
   }
 
-  .todo .sign-up-mode form.sign-up-form {
+  main.sign-up-mode form.sign-up-form {
     transform: translateX(0%);
   }
 
@@ -389,7 +367,7 @@ label {
 }
 
 @media (max-width: 530px) {
-    .todo {
+  main {
     padding: 1rem;
   }
 
